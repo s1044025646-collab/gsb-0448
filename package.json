@@ -1,0 +1,16 @@
+{
+  "name": "wilson-merge-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地二项比例 Wilson 区间与计数合并核验后端（API + CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
